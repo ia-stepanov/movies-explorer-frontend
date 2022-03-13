@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 70px;
+}
+
+.header__link {
+  display: flex;
+}
+
+.header__logo {
+  transition: opacity .2s linear;
+}
+
+.header__logo:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.header_type_auth {
+  padding: 18px 70px;
+  background-color: #073042;
+}
