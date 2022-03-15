@@ -42,3 +42,39 @@
   opacity: .6;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 0 50px 90px;
+  }
+
+  .portfolio__header {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .portfolio__link {
+    background-size: 18px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .portfolio {
+    padding: 0 14px 70px;
+  }
+
+  .portfolio__header {
+    font-size: 14px;
+  }
+
+  .portfolio__list {
+    margin-top: 21px;
+  }
+
+  .portfolio__link {
+    background-size: 12px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

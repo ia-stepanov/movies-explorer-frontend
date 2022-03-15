@@ -6,7 +6,7 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 23px 20px;
   margin: 0;
   padding: 70px 0 0;
@@ -24,7 +24,7 @@
   width: 100%;
   padding: 10px 0 9px 0;
   outline: none;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   border-radius: 6px;
   background-color: white;
   font-size: 12px;
@@ -36,4 +36,30 @@
 .cards__button:hover {
   opacity: .6;
   cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .cards {
+    margin: 0 30px 0;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 15px 20px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .cards {
+    margin: 0 10px 0;
+  }
+
+  .cards__list {
+    padding: 40px 0 0;
+    gap: 18px 20px;
+  }
+
+  .cards__button-container {
+    max-width: 240px;
+  }
 }

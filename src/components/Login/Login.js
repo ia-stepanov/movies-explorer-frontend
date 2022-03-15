@@ -5,7 +5,7 @@ function Login() {
     <Form header="Рады видеть!" submit="Войти" question="Ещё не зарегистрированы?" link="Регистрация" path="/signup">
       <label className="form__item">
         <p className="form__item-text">E-mail</p>
-        <input type="email" className="form__field" placeholder="pochta@yandex.ru" required />
+        <input type="email" className="form__field" defaultValue="pochta@yandex.ru" required />
         <p className="form__error">Что-то пошло не так...</p>
       </label>
 

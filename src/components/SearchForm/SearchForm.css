@@ -111,3 +111,52 @@
 .search__checkbox:checked + .search__slider::before {
   transform: translateX(16px);
 }
+
+@media screen and (max-width: 800px) {
+  .search {
+    flex-direction: column;
+    margin: 0 30px 0;
+    padding: 55px 0 17px;
+  }
+
+  .search__container {
+    width: 98%;
+    padding: 6px;
+    margin: 0 0 37px;
+  }
+
+  .search__input {
+    padding: 0 11px;
+  }
+
+  .search__toggle {
+    margin: 0 0 39px;
+  }
+
+  .search__films {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .search {
+    margin: 0 15px 0;
+  }
+
+  .search__container {
+    margin: 0 0 44px;
+  }
+
+  .search__input {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .search__toggle {
+    margin: 0 0 26px;
+  }
+
+  .search__films {
+    font-size: 11px;
+  }
+}

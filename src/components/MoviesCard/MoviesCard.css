@@ -54,7 +54,7 @@
 }
 
 .card__button_delete:hover {
-  background: #F9F9F9 url(../../images/icon-delete.svg) center no-repeat;
+  background: #f9f9f9 url(../../images/icon-delete.svg) center no-repeat;
 }
 
 .card__duration {
@@ -64,4 +64,27 @@
   color: #a0a0a0;
   font-size: 11px;
   line-height: 13px;
+}
+
+@media screen and (max-width: 800px) {
+  .card__image {
+    width: 339px;
+    height: 190px;
+  }
+
+  .card__title {
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card__title {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .card__image {
+    width: 300px;
+    height: 168px;
+  }
 }

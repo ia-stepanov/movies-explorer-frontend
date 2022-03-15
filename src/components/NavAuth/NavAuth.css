@@ -28,8 +28,19 @@
 
 .nav-auth__link_type_signin {
   color: #000;
-  background-color: #2BE080;
+  background-color: #2be080;
   margin-left: 30px;
   padding: 8px 20px;
   border-radius: 3px;
+}
+
+@media screen and (max-width: 540px) {
+  .nav-auth__link {
+    font-size: 10px;
+  }
+
+  .nav-auth__link_type_signin {
+    margin-left: 14px;
+    padding: 7px 12px;
+  }
 }
