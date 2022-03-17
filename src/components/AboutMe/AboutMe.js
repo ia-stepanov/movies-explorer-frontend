@@ -6,8 +6,7 @@ const AboutMe = () => {
     <section className="about-me">
       <h2 className="about-me__header">Студент</h2>
 
-      <div className="about-me__container">Please commit your changes or stash them before you switch branches.
-Aborting
+      <div className="about-me__container">
         <div className="about-me__info">
           <h3 className="about-me__name">Игорь</h3>
           <p className="about-me__job">Фронтенд-разработчик, 30 лет</p>
