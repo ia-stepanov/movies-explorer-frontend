@@ -1,0 +1,144 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 0;
+}
+
+.form__container {
+  max-width: 396px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__link {
+  margin-left: 6px;
+  color: #3456f3;
+  text-decoration: none;
+  transition: opacity .2s linear;
+}
+
+.form__link:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.form__logo {
+  margin: 0px 0px 0px -6px;
+}
+
+.form__title {
+  margin: 37px 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.form__inputs {
+  width: 100%;
+  height: 100%;
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form__item-text {
+  font-size: 10px;
+  line-height: 12px;
+  color: #a0a0a0;
+  margin: 0 0 9px;
+}
+
+.form__field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding: 0 0 0 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form__field:focus {
+  outline: none;
+}
+
+.form__field_color-error {
+  color: #ff3055;
+}
+
+.form__error {
+  opacity: 0;
+  display: block;
+  margin: 10px 0 0;
+  color: #ff3055;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 12px;
+}
+
+.form__error-display {
+  opacity: 1;
+}
+
+.form__button {
+  margin: 68px 0 17px;
+  padding: 13px 0 15px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #3456f3;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  transition: opacity .2s linear;
+}
+
+.form__button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.form__text {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media all and (max-width: 800px) {
+  .form {
+    padding: 232px 0 0;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .form {
+    padding: 56px 30px 0;
+  }
+
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__title {
+    margin: 47px 0 40px 0;
+  }
+}

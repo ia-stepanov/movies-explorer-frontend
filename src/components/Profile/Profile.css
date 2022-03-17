@@ -1,0 +1,155 @@
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__form {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0 0;
+}
+
+.profile__greeting {
+  margin: 0 0 123px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.profile__inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2px;
+}
+
+.profile__text {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 16px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.profile__text:first-of-type {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.profile__text:last-of-type {
+  grid-row: 2;
+  grid-column: 1;
+  padding: 16px 0 0;
+  border: none;
+}
+
+.profile__area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.profile__area:last-of-type {
+  border: none;
+}
+
+.profile__area_type_name {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.profile__area_type_email {
+  grid-row: 2;
+  grid-column: 2;
+  justify-content: flex-end;
+  padding: 16px 0 0;
+}
+
+.profile__settings {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-align: end;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.profile__button {
+  margin: 220px 0 16px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .2s linear;
+}
+
+.profile__button:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.profile__button:disabled {
+  opacity: .2;
+}
+
+.profile__link {
+  color: #FF3055;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  transition: opacity .2s linear;
+}
+
+.profile__link:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .profile__form {
+    padding: 245px 0 0;
+  }
+
+  .profile__greeting {
+    margin: 0 0 96px;
+  }
+
+  .profile__button {
+    margin: 210px 0 16px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .profile__form {
+    max-width: 260px;
+    padding: 79px 0 0;
+  }
+
+  .profile__greeting {
+    margin: 0 0 80px;
+  }
+
+  .profile__button {
+    /* margin: 380px 0 14px; */
+    font-size: 12px;
+  }
+
+  .profile__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
