@@ -1,3 +1,13 @@
 .saved-movies {
   flex: 1 0 auto;
 }
+
+.saved-movies__text-error {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+}

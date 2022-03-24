@@ -147,10 +147,6 @@
     text-decoration: none;
   }
 
-  .navigation__link_active {
-    border-bottom: 2px solid #000;
-  }
-
   .navigation__link_type_profile {
     font-size: 14px;
   }
