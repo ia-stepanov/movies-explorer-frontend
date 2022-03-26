@@ -77,7 +77,7 @@ function Register({ onRegister }) {
               <p className={`form__error ${errors.password ? 'form__error-display' : ''}`}>{errors.password}</p>
             </label>
           </div>
-          <button className="form__button" type="submit" disabled={!isValid}>Зарегистрироваться</button>
+          <button className={`form__button ${isValid ? "" : "form__button_disabled"}`} type="submit" disabled={!isValid ? true : ''}>Зарегистрироваться</button>
         </form>
         <p className="form__text">
           Уже зарегистрированы?

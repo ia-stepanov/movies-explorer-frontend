@@ -1,7 +1,10 @@
 import './SearchForm.css';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const SearchForm = ({ handleGetMovies, filmsTumbler, filmsInputSearch, handleGetMoviesTumbler }) => {
+  const { pathname } = useLocation();
+
   const [inputSearch, setInputSearch] = useState('');
   const [tumbler, setTumbler] = useState(false);
 
@@ -34,8 +37,8 @@ const SearchForm = ({ handleGetMovies, filmsTumbler, filmsInputSearch, handleGet
       <div className="search__toggle">
         <p className="search__films">Короткометражки</p>
         <label className="search__tumbler">
-          <input className="search__checkbox" type="checkbox" value={tumbler} checked={tumbler} onChange={handleTumblerChange}/>
-          <span className="search__slider" />
+          <input className="search__checkbox" type="checkbox" value={tumbler} checked={tumbler} onChange={handleTumblerChange} disabled={`${pathname !== '/saved-movies' ? '' : 'disabled'}`} />
+          <span className={`search__slider ${pathname !== '/saved-movies' ? "" : "search__slider_disabled"}`} />
         </label>
       </div>
     </form>

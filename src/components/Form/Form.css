@@ -107,6 +107,14 @@
   transition: opacity .2s linear;
 }
 
+.form__button_disabled {
+  background-color: #d9d9d9;
+  color: #000;
+  cursor: default;
+  pointer-events: none;
+  opacity: .2;
+}
+
 .form__button:hover {
   opacity: .8;
   cursor: pointer;
