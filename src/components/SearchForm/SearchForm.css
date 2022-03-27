@@ -104,12 +104,6 @@
   background-color: #2be080;
 }
 
-.search__slider_disabled {
-  cursor: default;
-  pointer-events: none;
-  opacity: .2;
-}
-
 .search__checkbox:checked + .search__slider {
   background-color: #2be080;
 }
