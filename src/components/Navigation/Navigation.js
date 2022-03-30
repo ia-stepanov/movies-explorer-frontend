@@ -26,7 +26,7 @@ const Navigation = () => {
               </li>
             </ul>
           </div>
-          <NavLink to="/profile" className="navigation__link navigation__link_type_profile" activeClassName="navigation__link_active">Аккаунт</NavLink>
+          <Link to="/profile" className="navigation__link navigation__link_type_profile">Аккаунт</Link>
         </div>
       </div>
     </nav>

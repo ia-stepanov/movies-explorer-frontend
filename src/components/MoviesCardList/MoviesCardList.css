@@ -5,13 +5,23 @@
 .cards__list {
   display: grid;
   justify-content: center;
-  justify-items: center;
+  justify-items: start;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 23px 20px;
   margin: 0;
   padding: 70px 0 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+.cards__text{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  color: #8b8b8b;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 92px;
 }
 
 .cards__button-container {
@@ -44,6 +54,7 @@
   }
 
   .cards__list {
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 15px 20px;
   }
